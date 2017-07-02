@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>upload</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="upload">
+		
+	</div>
+	<!-- <input type="file" id="uploadFile" name="file" accept="image/*" /> -->
+</body>
+<script src = 'upload.js'></script>
+<script>
+	var settings = {
+		callback:function(data,blob,formdata){
+			console.log(formdata,blob);
+		}
+	}
+	$('.upload').upload(settings);
+</script>
+</html>
